@@ -1,3 +1,5 @@
+#Assez dur comme exo
+
 def ajoute_dictionnaires(d1:dict,d2:dict):
     if d1 == {}:
         return d2
