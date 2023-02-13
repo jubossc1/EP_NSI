@@ -19,3 +19,12 @@ def ajoute_dictionnaires(d1:dict,d2:dict):
 
     return d
   
+#Solution beaucoup plus facile:
+
+def ajoute_dictionnaires(dico1:dict, dico2:dict):
+    for key, value in dico2.items():
+        if key in dico1:
+            dico1[key] += value
+        else:
+            dico1[key] = value
+    return dico1
