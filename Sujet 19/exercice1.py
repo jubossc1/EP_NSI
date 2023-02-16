@@ -1,3 +1,4 @@
+#Programme Faux
 def recherche(tab:list,n:int):
     if n < tab[0] or n > tab[-1] or n not in tab:
         return -1
