@@ -16,7 +16,7 @@ class AdresseIP:
     def est_reservee(self):
         """renvoie True si l'adresse IP est une adresse
            réservée, False sinon"""
-        return self.liste_octet()[3] >= 0 or self.liste_octet()[3] <= 255
+        return self.liste_octet()[3] == 0 or self.liste_octet()[3] == 255
 
     def adresse_suivante(self):
         """renvoie un objet de AdresseIP avec l'adresse
